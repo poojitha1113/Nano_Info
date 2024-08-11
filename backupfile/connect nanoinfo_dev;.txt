@@ -1,0 +1,14 @@
+connect nanoinfo_dev;
+show tables;
+
+2 tables to register for the user users_auth and users_profiles;
+
+user_auth is 1st table to display the user info 
+it will reflect on users_profiles
+
+select * from users_auth;
+update users_auth set active=null where email='poojitha.gutha1113@gmail.com'
+
+insert into users_profiles (user_id,loginNumber, first_name, last_name, affiliation,org_id,expertise,educationalLeavel,position,sector,website,about,registration_date,lastLogin,lastLoginIp,laseUpdated) values (466,0,'poojitha','gutha','csusb',9,'["Onthology & Database Devlopment"]','Bachelors','na','na',' ','','2017-08-14 11:27:49','2018-03-14 02:49:25', '45.50.135.10',NOW());
+select * from users_profiles where user_id=466;
+
